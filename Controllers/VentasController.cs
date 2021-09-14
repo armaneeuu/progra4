@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -9,21 +9,18 @@ using progra4.Models;
 
 namespace progra4.Controllers
 {
-    public class HomeController : Controller
+    public class VentasController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<VentasController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public VentasController(ILogger<VentasController> logger)
         {
             _logger = logger;
         }
 
-        public IActionResult Index()
-        {
+        public IActionResult Indexa(){
             return View();
         }
-
-       
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
